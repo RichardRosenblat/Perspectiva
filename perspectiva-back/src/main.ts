@@ -14,7 +14,7 @@ async function bootstrap() {
   app.enableShutdownHooks();
   app.enableCors();
   app.enableVersioning({
-    defaultVersion: '1',
+    defaultVersion: configService.get('VERSION'),
     type: VersioningType.URI,
   });
   app.useGlobalPipes(
