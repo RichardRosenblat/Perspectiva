@@ -1,7 +1,7 @@
 import { Test, TestingModule } from '@nestjs/testing';
 import { HealthService } from './health.service';
 
-describe('UsersService', () => {
+describe('UserService', () => {
   let service: HealthService;
 
   beforeEach(async () => {

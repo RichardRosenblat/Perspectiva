@@ -2,7 +2,7 @@ import { Module } from '@nestjs/common';
 import { ConfigModule, ConfigService } from '@nestjs/config';
 import { HealthModule } from './domain/health/health.module';
 import { TypeOrmModule } from '@nestjs/typeorm';
-import { UsersModule } from './domain/users/users.module';
+import { UserModule } from './domain/user/user.module';
 import databaseConfig from './database/config/database.config';
 
 @Module({
@@ -17,7 +17,7 @@ import databaseConfig from './database/config/database.config';
       inject: [ConfigService],
     }),
     HealthModule,
-    UsersModule,
+    UserModule,
   ],
 })
 export class AppModule {}

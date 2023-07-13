@@ -17,10 +17,10 @@ export default registerAs(
 
       migrationsTableName: 'migration',
 
-      migrations: ['src/migration/*.ts'],
+      migrations: ['src/database/migration/*.ts'],
 
       cli: {
-        migrationsDir: 'src/migration',
+        migrationsDir: 'src/database/migration',
       },
 
       synchronize: process.env.MODE != 'DEV',
